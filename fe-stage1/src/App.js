@@ -1,7 +1,15 @@
+import "./styles.css"
 
 function App() {
   return (
-   <h1>Go ahead</h1>
+    <div className="container">
+      <section className = "avi-section">
+        <p></p>
+      </section>
+      <section>
+
+      </section>
+    </div>
   );
 }
 

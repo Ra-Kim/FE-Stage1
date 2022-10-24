@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: blue;
+}
+
+.container {
+    height: 100vh;
+    width: 70%;
+    background-color: grey;
+    margin: auto;
+}
