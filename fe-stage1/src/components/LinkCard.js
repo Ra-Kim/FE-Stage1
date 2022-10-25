@@ -2,7 +2,9 @@ import React from 'react'
 
 const LinkCard = () => {
   return (
-    <div>LinkCard</div>
+    <div className='link-card'>
+        <p>Zuri Team</p>
+    </div>
   )
 }
 

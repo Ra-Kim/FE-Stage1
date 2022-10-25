@@ -1,5 +1,6 @@
 import React from 'react';
 import { defaultIcon } from "../assets/svgs/icon";
+import LinkCard from './LinkCard';
 
 const MainContent = () => {
   return (
@@ -11,7 +12,7 @@ const MainContent = () => {
         <p>Rakim Alpha</p>
       </section>
       <section>
-
+        <LinkCard />
       </section>
     </div>
   )
