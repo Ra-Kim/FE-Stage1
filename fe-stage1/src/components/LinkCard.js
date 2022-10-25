@@ -1,10 +1,12 @@
 import React from 'react'
 
-const LinkCard = () => {
+const LinkCard = (props) => {
   return (
-    <div className='link-card'>
-        <p>Zuri Team</p>
-    </div>
+    <a href={props.url}> 
+      <div className='link-card' id = {props.id}>
+          <p>{props.text}</p>
+      </div>
+    </a>
   )
 }
 
