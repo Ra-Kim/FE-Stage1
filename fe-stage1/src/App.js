@@ -1,15 +1,13 @@
+import Footer from "./components/Footer";
+import MainContent from "./components/MainContent";
 import "./styles.css"
 
 function App() {
   return (
-    <div className="container">
-      <section className = "avi-section">
-        <p></p>
-      </section>
-      <section>
-
-      </section>
-    </div>
+    <>
+      <MainContent />
+      <Footer />
+    </>
   );
 }
 
