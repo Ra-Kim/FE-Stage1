@@ -56,8 +56,9 @@ a {
 
 .camera {
     position: absolute;
+    padding: 1%;
     top: 50%;
-    left: 40%;
+    left: 38%;
     display:none;
 }
 
@@ -80,12 +81,22 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius:8px;
     width: 90%;
     margin: auto;
     margin-bottom: 1.2%;
     padding: 1.2% 0;
-    background: rgba(16, 24, 40, 0.1);
-    /* filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05)); */
+    background: rgba(16, 24, 40, 0.05);
+    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+}
+
+.link-card:hover {
+    background:#D0D5DD;
+}
+
+a:focus > div {
+    background: #EAECF0;
+    border: 1px solid #98A2B3;
 }
 
 .link-card p {

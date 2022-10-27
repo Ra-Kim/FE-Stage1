@@ -31,12 +31,12 @@ const MainContent = () => {
     setIsHovered(false)
   }
 
-  const handleMouseEnterOnCam = () => {
-    setIsFocused(true)
+  const handleClick = () => {
+    setIsFocused(!isFocused)
   }
 
   const style = {
-    width: isFocused ? '95' : '88',
+    width: isFocused ? '115' : '88',
     height: isFocused ? '95' : '88',
   }
 
@@ -59,6 +59,7 @@ const MainContent = () => {
           />
           <CameraIcon 
             hovered = {isHovered}
+            handleClick = {handleClick}
           />
         </div>
         <p id='twitter'>Rakim Alpha</p>
