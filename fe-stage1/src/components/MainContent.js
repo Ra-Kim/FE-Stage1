@@ -7,6 +7,7 @@ import { GithubIcon } from '../assets/svgs/github-icon';
 import img from "../assets/Images/profile.jpg"
 import CameraIcon  from '../assets/svgs/camera-icon';
 import { ShareButton, ShareButtonHover } from '../assets/svgs/share';
+import { MoreButton, MoreButtonFocus } from '../assets/svgs/more';
 
 const MainContent = ({isMobile}) => {
   const [isHovered , setIsHovered] = useState(false)
@@ -74,11 +75,16 @@ const MainContent = ({isMobile}) => {
         <p id='twitter'>Rakim Alpha</p>
         <p id='slack'>Alaede Increase-Chris</p>
 
+        {!isMobile ? 
         <div className='avi-button' onMouseEnter={handleShareButton} onMouseLeave = {handleShareButtonLeave}>
           {buttonFocus ? ShareButtonHover : ShareButton}
         </div>
+        :
+        <div className='avi-button' onMouseEnter={handleShareButton} onMouseLeave = {handleShareButtonLeave}>
+          {buttonFocus ? MoreButtonFocus : MoreButton}
+        </div>}
       </section>
-      <section>
+      <section className='linksection'>
         {linksection}
         {!isMobile && <div className='social-div'>
           {SlackIcon}
