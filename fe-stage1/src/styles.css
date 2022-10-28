@@ -19,6 +19,14 @@ a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2%;
+    position: relative;
+}
+
+.avi-button {
+    padding: 1%;
+    position: absolute;
+    top: 8%;
+    right: 20%;
 }
 
 .avi-section p {
@@ -42,7 +50,7 @@ a {
 }
 
 .image {
-    margin-top: 0.5%;
+    margin-top: 1%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -51,7 +59,7 @@ a {
 }
 
 .image:hover{
-    background: rgba(16, 24, 40, 0.2);
+    background: rgba(16, 24, 40, 0.3);
 }
 
 .camera {
@@ -61,7 +69,6 @@ a {
     left: 38%;
     display:none;
 }
-
 
 footer {
     height: 20vh;
@@ -112,4 +119,12 @@ a:focus > div {
 
 .social-div > div {
     margin: 0 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+        padding: 0.5%;
+    }
 }

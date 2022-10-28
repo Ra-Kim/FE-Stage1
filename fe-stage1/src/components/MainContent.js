@@ -6,11 +6,12 @@ import { SlackIcon } from '../assets/svgs/slack-icon';
 import { GithubIcon } from '../assets/svgs/github-icon';
 import img from "../assets/Images/profile.jpg"
 import CameraIcon  from '../assets/svgs/camera-icon';
+import { ShareButton, ShareButtonHover } from '../assets/svgs/share';
 
-const MainContent = () => {
-
+const MainContent = ({isMobile}) => {
   const [isHovered , setIsHovered] = useState(false)
   const [isFocused , setIsFocused] = useState(false)
+  const [buttonFocus, setButtonFocus] = useState(false)
 
 
   const linksection = links.map(link => {
@@ -34,6 +35,14 @@ const MainContent = () => {
   const handleClick = () => {
     setIsFocused(!isFocused)
   }
+
+  const handleShareButton = () => {
+      setButtonFocus(true)
+  }
+
+  const handleShareButtonLeave = () => {
+    setButtonFocus(false)
+}
 
   const style = {
     width: isFocused ? '115' : '88',
@@ -64,13 +73,17 @@ const MainContent = () => {
         </div>
         <p id='twitter'>Rakim Alpha</p>
         <p id='slack'>Alaede Increase-Chris</p>
+
+        <div className='avi-button' onMouseEnter={handleShareButton} onMouseLeave = {handleShareButtonLeave}>
+          {buttonFocus ? ShareButtonHover : ShareButton}
+        </div>
       </section>
       <section>
         {linksection}
-        <div className='social-div'>
+        {!isMobile && <div className='social-div'>
           {SlackIcon}
           {GithubIcon}
-        </div>
+        </div>}
       </section>
     </div>
   )
