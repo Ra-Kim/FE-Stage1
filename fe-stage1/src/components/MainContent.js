@@ -38,7 +38,8 @@ const MainContent = ({isMobile}) => {
   }
 
   const handleShareButton = () => {
-      setButtonFocus(true)
+      setButtonFocus(!buttonFocus)
+      console.log(buttonFocus)
   }
 
   const handleShareButtonLeave = () => {
@@ -80,8 +81,10 @@ const MainContent = ({isMobile}) => {
           {buttonFocus ? ShareButtonHover : ShareButton}
         </div>
         :
-        <div className='avi-button' onMouseEnter={handleShareButton} onMouseLeave = {handleShareButtonLeave}>
-          {buttonFocus ? MoreButtonFocus : MoreButton}
+        <div className='avi-button' onClick={handleShareButton}>
+          <button>
+           {buttonFocus ? MoreButtonFocus : MoreButton}
+          </button>
         </div>}
       </section>
       <section className='linksection'>

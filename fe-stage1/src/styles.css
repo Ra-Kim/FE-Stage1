@@ -29,6 +29,11 @@ a {
     right: 20%;
 }
 
+.avi-button:hover{
+    top:7%;
+    right: 19%;
+}
+
 .avi-section p {
     margin-top: 8px;
     color: #101828;
@@ -136,6 +141,18 @@ a:focus > div {
     }
 
     .avi-button {
+        top: 15%;
+        right: 8%;
+    }
+
+    .avi-button button {
+        border: none;
+        background: none;
+        padding: 2%;
+        z-index: 999;
+    }
+
+    .avi-button:hover {
         top: 15%;
         right: 8%;
     }
