@@ -42,11 +42,11 @@ a {
     line-height: 30px;
 }
 
-#profile-pic {
+#profile__img {
     border-radius: 50%;
 }
 
-#profile-pic:hover {
+#profile__img:hover {
     z-index: -1;
 }
 
@@ -91,6 +91,7 @@ footer p {
 
 .link-card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius:8px;

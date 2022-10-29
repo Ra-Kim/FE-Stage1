@@ -22,6 +22,7 @@ const MainContent = ({isMobile}) => {
       id = {link.id}
       text = {link.text}
       url = {link.url}
+      subtext = {link.subtext}
     />
   )})
 
@@ -61,7 +62,7 @@ const MainContent = ({isMobile}) => {
       <section className = "avi-section">
         <div className='image' onMouseOver={handleMouseEnter} onMouseLeave = {handleMouseLeave}  style = {style}>
           <img 
-            id='profile-pic'
+            id='profile__img'
             src={img}
             style ={imgStyle}
             alt='profile-pic'
@@ -74,7 +75,7 @@ const MainContent = ({isMobile}) => {
           />
         </div>
         <p id='twitter'>Rakim Alpha</p>
-        <p id='slack'>Alaede Increase-Chris</p>
+        <p id='slack'>Stealth</p>
 
         {!isMobile ? 
         <div className='avi-button' onMouseEnter={handleShareButton} onMouseLeave = {handleShareButtonLeave}>
