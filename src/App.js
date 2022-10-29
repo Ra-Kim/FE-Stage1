@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <MainContent isMobile = {isMobile} />
-      {!isMobile && <Footer />}
+      <Footer />
     </>
   );
 }

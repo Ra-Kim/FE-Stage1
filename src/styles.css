@@ -172,4 +172,9 @@ a:focus > div {
     a {
         padding: 0;
     }
+
+    footer {
+        flex-direction:column;
+        padding: 2%;
+    }
 }

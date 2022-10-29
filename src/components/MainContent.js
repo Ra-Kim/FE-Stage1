@@ -90,10 +90,10 @@ const MainContent = ({isMobile}) => {
       </section>
       <section className='linksection'>
         {linksection}
-        {!isMobile && <div className='social-div'>
+        <div className='social-div'>
           {SlackIcon}
           {GithubIcon}
-        </div>}
+        </div>
       </section>
     </div>
   )
