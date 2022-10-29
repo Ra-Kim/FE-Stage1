@@ -13,8 +13,8 @@ const LinkCard = (props) => {
   }
 
   return (
-    <a href={props.url} target='blank'> 
-      <div className='link-card' id = {props.id} onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}>
+    <a href={props.url} target='blank' id = {props.id}> 
+      <div className='link-card'  onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}>
           <p>{props.text}</p>
           {isHover && <div style={{display: "flex", width: "80%", justifyContent: "center", fontSize :"10"}}><p><small>{props.subtext}</small></p></div>}
       </div>
