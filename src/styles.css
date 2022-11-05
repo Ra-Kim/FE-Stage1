@@ -354,6 +354,12 @@ a:focus > div {
         margin: 4% 0;
     }
 
+    .form-item p {
+        font-size: 12px;
+        color: red;
+        font-weight: bold;
+    }
+
     input {
         padding: 3% 4$;
     }
