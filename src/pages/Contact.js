@@ -28,10 +28,10 @@ function handleChange(event){
           <form>
             <div className = "name-form-div">
               <div className = "form-item">
-                <label for="fname">First name</label>
+                <label for="first_name">First name</label>
                 <input 
                   type="text" 
-                  id="fname" 
+                  id="first_name" 
                   name="firstName"
                   onChange={handleChange} 
                   placeholder="Enter your first name" 
@@ -40,10 +40,10 @@ function handleChange(event){
                   />
               </div>
               <div className = "form-item">
-                <label for="lname">Last Name</label>
+                <label for="last_name">Last Name</label>
                 <input 
                   type="text" 
-                  id="lname" 
+                  id="last_name" 
                   name="lastName" 
                   onChange={handleChange} 
                   placeholder="Enter your last name" 
@@ -67,7 +67,7 @@ function handleChange(event){
                 <label htmlFor = "other">Message</label>
                 <textarea 
                   name="message" 
-                  id="other"
+                  id="message"
                   value = {data.message}
                   onChange ={handleChange}
                   // className='form-input'
@@ -89,6 +89,7 @@ function handleChange(event){
               <div className='form-item' id='button-div'>
                 <input 
                   type= "submit" 
+                  id='btn_submit'
                   value ="Send message" 
                   className = "button" 
                   disabled={disabled} 

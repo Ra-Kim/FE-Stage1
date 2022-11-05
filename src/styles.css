@@ -168,7 +168,7 @@ input[type=text]:focus {
     width: 98%;
 }
 
-#other{
+#message{
         overflow: auto;
         background: #FFFFFF;
         border: 1px solid #D0D5DD;

@@ -91,7 +91,7 @@ const MainContent = ({isMobile}) => {
       </section>
       <section className='linksection'>
         {linksection}
-        <Link to = "./contact">
+        <Link to = "./contact" id='contact'>
           <div className='link-card'  onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}>
             <p>Contact Me</p>
           </div>
