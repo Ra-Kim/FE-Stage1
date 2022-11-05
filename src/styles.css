@@ -76,7 +76,7 @@ a {
 }
 
 footer {
-    height: 10vh;
+    height: 70px;
     margin:auto;
     width: 70%;
     display: flex;
@@ -90,7 +90,7 @@ footer p {
 }
 
 .contact-container {
-    height: 85vh;
+    /* height: 85vh; */
     width: 70%;
     padding: 1%;
     margin: auto;
