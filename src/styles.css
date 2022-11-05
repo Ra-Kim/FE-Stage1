@@ -306,4 +306,59 @@ a:focus > div {
         flex-direction:column;
         padding: 2%;
     }
+
+    .contact-container {
+        /* height: 85vh; */
+        width: 100%;
+        padding: 1%;
+    }
+
+    .form-group {
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+        padding: 2%;
+    }
+
+    .form-group h1 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #101828;
+    }
+    .form-group p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #475467;
+    }
+
+    .form-container {
+        margin-top: 10%;
+    }
+
+    .name-form-div {
+        display: flex;
+        flex-direction: column;
+        /* gap: 16px; */
+    }
+
+    .name-form-div div {
+        margin-block: 0;
+    }
+
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        margin: 4% 0;
+    }
+
+    input {
+        padding: 3% 4$;
+    }
+
+    label {
+        margin: 1% 0;
+    }
 }
