@@ -28,7 +28,7 @@ export const links = [
         id: "pitch",
         text: "Background Check For Coders",
         url: " https://background.zuri.team",
-        subtext: "This internship will benefit heavily with a background check for coders which i can offer with a 10% discount on market prices."
+        subtext: "This internship will benefit heavily with background checks for coders which i offer with a 10% discount on market prices."
     },
     {
         id: "book__design",

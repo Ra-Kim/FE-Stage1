@@ -1,17 +1,20 @@
+import "./styles.css";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact"
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-import MainContent from "./components/MainContent";
-import { useMediaQuery } from "react-responsive";
-import "./styles.css"
 
-function App() {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-
+export default function App() {
   return (
     <>
-      <MainContent isMobile = {isMobile} />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   );
 }
-
-export default App;

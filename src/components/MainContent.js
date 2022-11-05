@@ -4,6 +4,7 @@ import LinkCard from './LinkCard';
 import { links } from "../links";
 import { SlackIcon } from '../assets/svgs/slack-icon';
 import { GithubIcon } from '../assets/svgs/github-icon';
+import {Link} from 'react-router-dom'
 import img from "../assets/Images/profile.jpg"
 import CameraIcon  from '../assets/svgs/camera-icon';
 import { ShareButton, ShareButtonHover } from '../assets/svgs/share';
@@ -90,6 +91,12 @@ const MainContent = ({isMobile}) => {
       </section>
       <section className='linksection'>
         {linksection}
+        <Link to = "./contact">
+          <div className='link-card'  onMouseEnter = {handleMouseEnter} onMouseLeave = {handleMouseLeave}>
+            <p>Contact Me</p>
+          </div>
+        </Link>
+          
         <div className='social-div'>
           {SlackIcon}
           {GithubIcon}
